@@ -16,9 +16,9 @@ function App() {
         {id: 11, name: "Christopher", age: 100},
       ]
   )
-  // return (
-  //     <NewComponent students={students}/>
-  // );
+  return (
+      <NewComponent students={students}/>
+  );
 }
 
 export default App;
