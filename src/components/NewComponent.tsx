@@ -11,8 +11,22 @@ type StudentType = {
 }
 
 export const NewComponent = (props: NewComponentType) => {
-    debugger
     return (
-        <div>new component</div>
+        <ul>
+            {props.students.map((objectFromStudentArray,index)=>{
+                return (
+                    <li key={objectFromStudentArray.id}>
+                        <span>{objectFromStudentArray.name}</span>
+                        <span>age: {objectFromStudentArray.age}</span>
+                    </li>
+                )
+            })}
+        </ul>
     )
 }
+
+// const topCars = [
+//     {manufacturer: 'BMW', model: 'X5'},
+//     {manufacturer: 'Mersedes', model: 'MLS'},
+//     {manufacturer: 'Audi', model: 'Q7'}
+// ]
